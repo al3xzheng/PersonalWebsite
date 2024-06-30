@@ -1,0 +1,117 @@
+body {
+    background-color: rgba(235, 184, 156, 0.23);
+  }
+  
+  #banner {
+    position: relative;
+    top:5px;
+    width: 100%;
+      overflow-x: hidden;
+      object-fit: cover;
+      height: 110px;
+  }
+  
+  #beaver {
+    position: absolute;
+    top:33px;
+    left:25px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  ul.breadcrumb {
+    position: relative;
+    left:15px;
+      padding: 12px 16px;
+      /* list-style: none; */
+      background-color: #efc8c8;
+      border-radius: 25px;
+      width:fit-content;
+  }
+    
+    /* Display list items side by side */
+    ul.breadcrumb li {
+      display: inline;
+      font-size: 24px;
+    }
+    
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb li+li:before {
+      padding: 12px;
+      color: black;
+      content: "/\00a0";
+    }
+    
+    /* Add a color to all links inside the list */
+    ul.breadcrumb li a {
+      color: #052f54;
+      text-decoration: none;
+    }
+    
+    /* Add a color on mouse-over */
+    ul.breadcrumb li:not(#current) a:hover  {
+      color: #01447e;
+      text-decoration: underline;
+      padding: 5px;
+      border-radius: 12px;
+      background-color: bisque;
+      box-shadow: 3px 3px 6px rgb(129, 231, 148);
+    }
+  
+    #current {
+        text-decoration: none;
+      padding: 5px;
+      border-radius: 12px;
+      background-color: bisque;
+      box-shadow: 3px 3px 6px rgb(129, 231, 148);
+    }
+
+    .text{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+        width: 1000px;
+    }
+
+    #expl {
+        font-size: 25px;
+        line-height: 40px;
+
+    }
+
+#title{
+  position: relative;
+  /* width:100%; */
+
+  font-size: 60px;
+  top:-50px;
+  text-decoration: underline;
+  color: rgb(105, 105, 201);
+}
+
+#link{
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top:85px;
+}
+
+#gamedescription{
+  position: relative;
+  top:-10px;
+  z-index: 1;
+  line-height: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#vid {
+  height:600px;
+  position:relative;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(234, 15, 15);
+  border-radius: 25px;
+}
+
+  

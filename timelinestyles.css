@@ -1,0 +1,123 @@
+body {
+  background-color: rgba(235, 184, 156, 0.23);
+}
+
+#banner {
+  position: relative;
+  top:5px;
+  width: 100%;
+    overflow-x: hidden;
+    object-fit: cover;
+    height: 110px;
+}
+
+#beaver {
+  position: absolute;
+  top:33px;
+  left:25px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+ul.breadcrumb {
+  position: relative;
+  left:15px;
+    padding: 12px 16px;
+    /* list-style: none; */
+    background-color: #efc8c8;
+    border-radius: 25px;
+    width:fit-content;
+}
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 24px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 12px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #052f54;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li:not(#current) a:hover  {
+    color: #01447e;
+    text-decoration: underline;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: bisque;
+    box-shadow: 3px 3px 6px rgb(129, 231, 148);
+  }
+
+  #current {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: bisque;
+    box-shadow: 3px 3px 6px rgb(129, 231, 148);
+  }
+
+  .timeline {
+    position: relative;
+    top:20px;
+    left:-400px;
+    max-width: 1000px; /* Adjust as per your layout */
+    margin: 0 auto; /*Center the timeline horizontally*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .timeline-item {
+    position: relative;
+    left:4px;
+    padding-top: 32px; 
+    padding-bottom: 20px;
+    /* length of timeline line */
+    border-left: 5px solid #dd6b6b; /* Timeline line */
+    margin-bottom: 60px;
+    /* space to next time-line item */
+  }
+  
+  .timeline-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .timeline-time {
+    font-size: 24px;
+    align-self: center;
+    width:310px; /* Width of the timeline time/date */
+    flex-shrink: 0; /*Prevent timeline time from shrinking */
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30px;
+  }
+  
+  .timeline-text {
+    margin-left: 50px; /* Spacing between timeline time and text */
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust the position of the dot */
+    width: 12px;
+    height: 12px;
+    background-color: #444bd4;
+    border-radius: 50%;
+    border: 2px solid #fff; /* White border to make the dot stand out */
+  }

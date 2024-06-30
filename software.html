@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="softwarestyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Alex Zheng Timeline</title>
+</head>
+<body>
+    <div class="page">
+        <div>
+            <a href="index.html"><img src="resources/beaver.jpg" id="beaver"></a>
+        </div>
+        <div>
+            <img id="banner" src="resources/roadview.jpg">
+        </div>
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="timeline.html">My Timeline</a></li>
+                <li ><a href="hardware.html">Hardware</a></li>
+                <li id="current"><a>Software</a></li>
+                <li><a href="firmware.html">Firmware</a></li>
+                <li><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="pastwebsite.html">Past Personal Website</a></li>
+            </ul> 
+        </div>
+        <div class="text">
+            <p id="expl">
+                You can see my trivial front end work from this website and my
+                previous Past Personal Website on the right most folder tab.
+                <br><br>
+            </p>
+
+            <a id="link" href="https://github.com/al3xzheng/Game">
+                View On GitHub
+            </a>
+            <h1>
+                <span id="title">
+                    A Game I Created: Spear Knight!
+                </span>
+            </h1>
+            <p id="gamedescription">
+                This is a PyGame developed top-down shooter game where you try to kill enemies, dodge enemy projectiles, and survive for
+                as many waves as possible! <br><br>
+    
+                This game was created from September 2023-December 2023 with Parsia Nejad-Sattary and Sean Yuen as part of a project for our programming (Python)
+                course. I was responsible for the enemy-fire functions; the tracking of the enemy projectiles to the player periodically. The way it works.
+                Each enemy's location is stored in a list, so while the round is active, we copy the exact location of each enemy and the player at a 
+                given point in time (simple). Then we run through a for-loop for each enemy and generate a rotated-accordingly projectile directed at the 
+                player. The projectiles are locked in this direction and move towards the player (which the player will dodge). 
+                Ongoing, we have a counter that keeps track of the projectiles that leave the screen or hit the player, once all the projectiles are nullified, 
+                the firing restarts. The complexities of this task were found in its integration in the code as Sean implemented the enemy-follow functions beforehand, 
+                and debugging the occurence when the enemy is killed while the projectile is also nullified. This was very time-consuming to debug. The solution was found
+                through asking myself "what exactly is the problem to solve?" over and over again. If the enemy is killed and the projectile is out of the screen, the counter would be bugged
+                and the game wouldn't reset properly. 
+            </p>
+            <video id="vid" autoplay muted controls>
+                <source src="resources/Spear Knight Vid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              <!-- controls loop -->
+            </video> 
+
+            <p id="expl">
+                <br>                <br>
+
+                At my Co-op as a Jr. Technical Analyst at the MTO, I have become competent
+                in Java, JEE, WebLogic, Java SpringBoot, SQL, C#, and the world of
+                software technology! I get the privilege to be a sponge, learning
+                software with my Team Leads as part of the MTO dev team!
+                <br>
+                <br>                <br>
+
+
+            </p>
+
+        </div>
+                
+    </div>
+</body>
+</html>
