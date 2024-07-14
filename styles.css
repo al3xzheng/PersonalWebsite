@@ -1,5 +1,7 @@
 body {
     background-color: rgba(235, 184, 156, 0.23);
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   #beaver {
@@ -92,4 +94,154 @@ body {
       font-family: "Comic Sans MS", "Comic Sans", cursive;
       color: rgb(215, 43, 17);
     }
+
+    .socials {
+      width:max-content;
+      margin-left: auto ;
+      margin-right: auto ;
+    }
+
+    #medium {
+      background-color: rgb(240, 202, 153);
+      object-fit: cover;
+      /* position: absolute;
+      left: 32.5%;
+      top: 198px; */
+      width: 125px;
+      height: auto;
+      border-style:ridge;
+      border-color:black;
+      border-radius: 5px;
+      border-width: 3px;
+      transition: opacity 0.15s, background-color 0.3s, box-shadow 0.15s;
+    }
+    
+    #medium:hover {
+      opacity:0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #medium:active{
+      opacity: 0.5;
+      background-color: rgb(250, 222, 9);
+    }
+    
+    
+    #linkedin {
+      background-color: aliceblue;
+      object-fit: cover;
+      /* position: absolute;
+      left: 36%;
+      top: 193px; */
+      width: 30px;
+      height: auto;
+      border-style:ridge  ;
+      border-color:black;
+      border-radius: 5px;
+      transition: opacity 0.15s, background-color 0.3s, box-shadow 0.15s;
+    }
+    
+    #linkedin:hover{
+      opacity:0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    #linkedin:active{
+      opacity: 0.5;
+      background-color: rgb(0, 0, 0);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    #github {
+      background-color: aliceblue;
+      /position: absolute;
+      left: 39%;
+      top: 193px;
+      width: auto;
+      height: 30px;
+      border-style:ridge;
+      border-color: black;
+      border-radius: 5px;
+      transition: opacity 0.15s, background-color 0.3s, box-shadow 0.15s;
+    }
+    
+    #github:hover {
+      opacity:0.7;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #github:active{
+      opacity: 0.5;
+      background-color: rgb(242, 255, 0);
+    }
+
+    .blog {
+      text-align: center;
+    }
   
+  .blogs-container {
+      position: relative;
+      margin-left: auto ;
+      margin-right: auto ;
+      width: 90%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+  
+  .blog-entry {
+
+      position: relative;
+      /* left:4px; */
+      padding: 35px; 
+      /* length of timeline line */
+      border-left: 5px solid #3b9446; /* Timeline line */
+      border-radius: 20px;
+      margin-bottom: 60px;
+      /* space to next time-line item */
+    /* background-color: rgb(168, 180, 92); */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Sunrise_thailand_ko_samui.jpg');
+    background-size: cover;
+  }
+  
+  .blog-container2 {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .blog-header {
+      /* flex: 1; */
+      text-align: center;
+      align-self: center;
+      /* align in centre of container*/
+  }
+  
+  .blog-title {
+    color: #000000;
+    width:250px;
+      margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+      flex-shrink: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .blog-date {
+    padding-top: 0px;
+      /* margin: 10px; */
+      font-size: 24px;
+      color: rgb(255, 255, 255);
+      flex-shrink: 0;
+  }
+  
+  .blog-content {
+      background-color: rgba(217, 255, 0, 0.05);
+      /*nice fade */
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 40px;
+      font-size: 18px;
+      line-height: 30px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }

@@ -69,7 +69,7 @@ ul.breadcrumb {
   .timeline {
     position: relative;
     top:20px;
-    left:-400px;
+    left:-200px;
     max-width: 1000px; /* Adjust as per your layout */
     margin: 0 auto; /*Center the timeline horizontally*/
     overflow-y: scroll;
