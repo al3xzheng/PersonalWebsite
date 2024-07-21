@@ -180,6 +180,7 @@ body {
     }
   
   .blogs-container {
+    /* blog section */
       position: relative;
       margin-left: auto ;
       margin-right: auto ;
@@ -188,8 +189,8 @@ body {
       overflow-x: hidden;
   }
   
-  .blog-entry {
-
+  .blog-entry1 {
+      /* One blog */
       position: relative;
       /* left:4px; */
       padding: 35px; 
@@ -202,13 +203,30 @@ body {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Sunrise_thailand_ko_samui.jpg');
     background-size: cover;
   }
+
+  .blog-entry2 {
+    /* One blog */
+    position: relative;
+    /* left:4px; */
+    padding: 35px; 
+    /* length of timeline line */
+    border-left: 5px solid #3b9446; /* Timeline line */
+    border-radius: 20px;
+    margin-bottom: 60px;
+    /* space to next time-line item */
+  /* background-color: rgb(168, 180, 92); */
+  background-image: url('https://wallpapers.com/images/hd/relaxing-desktop-1920-x-1200-background-xxwknihbn4hi1l0v.jpg');
+  background-size: cover;
+}
   
   .blog-container2 {
+    /* title, date, and text */
     display: flex;
     align-items: flex-start;
   }
   
   .blog-header {
+    /* title and date */
       /* flex: 1; */
       text-align: center;
       align-self: center;
@@ -233,7 +251,7 @@ body {
       flex-shrink: 0;
   }
   
-  .blog-content {
+  .blog-content1 {
       background-color: rgba(217, 255, 0, 0.05);
       /*nice fade */
       padding-left: 20px;
@@ -245,3 +263,17 @@ body {
       border-radius: 25px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   }
+
+  .blog-content2 {
+    background-color: rgba(255, 248, 114, 0.4);
+    color: rgb(0, 0, 0);
+    /*nice fade */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
