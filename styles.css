@@ -233,6 +233,21 @@ body {
 background-image: url('https://png.pngtree.com/background/20230602/original/pngtree-travel-and-tour-bullet-train-in-mountains-river-nature-background-picture-image_2859570.jpg');
 background-size: cover;
 }
+
+.blog-entry4 {
+  /* One blog */
+  position: relative;
+  /* left:4px; */
+  padding: 35px; 
+  /* length of timeline line */
+  border-left: 5px solid #3b9446; /* Timeline line */
+  border-radius: 20px;
+  margin-bottom: 60px;
+  /* space to next time-line item */
+/* background-color: rgb(168, 180, 92); */
+background-image: url('https://img.cdn-pictorem.com/uploads/collection/G/GT7HDK2MOE/900_360-Studios_Spectacular_Skies_over_Koolina_Hawaii_at_Sunset.jpg');
+background-size: cover;
+}
   
   .blog-container {
     /* title, date, and text */
@@ -295,6 +310,20 @@ background-size: cover;
 
 .blog-content3 {
   background-color: rgba(239, 205, 104, 0.4);
+  color: rgb(0, 0, 0);
+  /*nice fade */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.blog-content4 {
+  background-color: rgba(233, 110, 227, 0.4);
   color: rgb(0, 0, 0);
   /*nice fade */
   padding-left: 20px;
