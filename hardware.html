@@ -27,22 +27,56 @@
             </ul> 
         </div>
         <div class="text">
-            <p id="expl">
+            <h1>URA1 Mayer Lab Temperature modulation circuit</h1>
+            <p>
+                Preview: My 1st project is to build a test fixture with 28 holes for wiring (banana plugs) that will take
+                a 28 pin IC for test. The IC will be mounted and secured onto a zero force IC socket mount and the mount will be connected
+                and soldered to a proto board. The protoboard will be attached onto the test fixture.
+                Each pin of the IC will be connected to a corresponding pin of the test fixture through soldering
+                connections to the protoboard and to each of the 28 holes. At each hole, there will be a
+                banana plug cables inserted into the test fixture holes, with the bottom end being soldered to the proto board.
+                Then when we Want 
+                to test, it's just plug and play.
+                Therefore, everything will be fixed either by a mount, i.e. the IC socket mount, or by solder. 
+
+                <br> <br>
+                For this beautiful project, I designed the circuitry. I thoroughly investigated and learned about my tool, the types of parts
+                available to me and optimized, while trying to over-engineer, choosing the right parts. I designed the circuit with
+                PMOSFETs, rotary encoders, level shifters, Raspberry pis (our controller), ADCs, buck converters, AC/DC converters. I drew
+                up the circuit in a online circuit maker and presented it. Then I learned a very crucial thing, that the circuit you
+                make doesn't just have to work nicely, it has to work with the physical components. After designing the circuit, something
+                that I am very proud of it being able to optimize even more to adapt the circuit to my surrounding to my advantage. Using JST 
+                connectors we cleverly use the protoboard that the chip was on to make power the heaters and fans more internal, covering up their wires,
+                but also making it easier to plug and play the heaters and fans because now the JST connetors could just connect whichever device you wanted
+                to use, heater, fan, or thermistor!
+                <br>
+                Additionally, we used self-calibrated thermistors to detect temp with a voltage divider circuit.
+            </p>
+
+            <h1>Cantenna</h1>
+            <p class="expl">
+                
                 I'm currently working on a Coffee Can Antenna. This incorporates many advanced
                 components to give and receive an RF signal. Based on the surroundings, the 
                 RF signal will vary and the cantenna will act as an Synthetic Aperture
                 Radar (SAR) imager. This data can be plotted to form a map of the surrounding
-                using MATLAB!
+                using MATLAB! Addtionally, on top of being a SAR radar it can be a speed detector by means of the Doppler effect; which expresses the fact that 
+                waves travelling from a moving object either travel faster or slower to a target.
                 This project was put off for quite a bit due to a component costing an excessive
-                amount.
+                amount. I'm just going to attempt to design the component myself in Altium. The voltage controlled oscillator costs upwards to 500$!
+                So far I have calculated where the monopole antennas must be placed in the can, from guide and free space wavelength theory and know that I have to create some
+                parts from scratch, which will be fun.
                 <br><br>
-                I'm currently working on building a Printed Circuit Board (PCB) using
-                Altium Designer. I am so excited to do this. I have not decided on the 
-                purpose or function of the PCB yet. 
-                <br><br>
-                Previously with my school University of Waterloo Midnight Sun Solar Rayce Car
-                Team, i created a Battery Level Detection PCB that measures the battery Level
-                of the solar car1
+            </p>
+            <h1>State of Charge PCB</h1>
+            <p>
+                In a team setting (school design team), I helped design a PCB that would measure the battery level of the solar car.
+                The team already had a shunt resistor, surprisingly massive, and the voltage levels of the battery were known. So we 
+                chose the IC to be used. This was fairly researchy and trivial stuff. But then we went on to Altium to build the circuit and lay it out 
+                . I learned a lot here. I learned about noise, decoupling caps, FETs, vias, silkscreen and how to use Altium designer!!!
+                We sent the circuit for manufacturing, to JLCPCB and it arrived and we assembled it with our Shunt. I also learned that
+                we build PCBs around the physical size limitation, the shunt in our case, and how to calculate resistances, since
+                in the real world, only certain resistance values are mass produced. 
             </p>
         </div>
     </div>

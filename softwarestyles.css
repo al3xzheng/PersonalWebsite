@@ -114,4 +114,14 @@ body {
   border-radius: 25px;
 }
 
+#pdf {
+  border-style:solid;
+  width:1000px;
+  height:1300px;
+  overflow-y: hidden;
+  border-radius: 30px;
+  border-color: rgb(240, 198, 59);
+  border-width: 5px;
+}
+
   

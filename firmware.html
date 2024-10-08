@@ -26,15 +26,79 @@
             </ul> 
         </div>
         <div class="text">
-            <p id="expl">
-                I'm currently working on an elevator model. I'm using the STM32l746 microcontroller
+            <h1>URA1 Mayer Lab Heater PID controller</h1>
+            <p>
+                The firmware and low level programming needed to keep the temperature of a chip under test in a test fixture constant requires us to code the controller board 
+                of our system, which for us, is a Raspberry pi pico to turn on and off the fan and heater using PWM. The fan uses PWM via a PWM control terminal in the fan.
+                When the fan is connected, we simply send a PWM signal from the Raspberry Pi Pico to this terminal. For the heater, it get more complicated. Maybe I should put this 
+                in the hardware section ... For the heater, there is no simple PWM pin, we must create is ourself. We do so using a PMOSFET, acting as a fast switch between our
+                power and our load. The signal to the mosfet will be PWM from the Pico, and thus will open and close the heaters circuit as desired, controlling the temp.
+                We used a Pmos since voltages from the Pi are 3.3 V, the Power voltage is 12 V, and the load is connected to GND. So V_gs = 3.3 - 12 = -8.7 < V_gs(th.). So it works
+                out. The reason we have to do this is because the PWM from the Pico cannot control the heater directly, the voltage is too low, it needs an intermediary.
+                I learned a lot on transistors and hope to learn more! So we use a PID controller programmed in Python which takes the difference in desired vs current T and puts the heater
+                on a specific mode and power (e.g. heat up 80%) PROPORTION, smooths out the temp modulation by adjutsing the rate of change of heater blast (DERIVATIVE), 
+                and considers the history to ensure we can reach a flat line (INTEGRATION). We also incorporate Slew Rate Limiting to ensure the heater control is much more smooth.
+                I will update when we finish writing the control code. We plan on writing the code from scratch wihtout the help of libraries.
+                
+            </p>
+            <h1>MUX (multiplexer control node) and HAL Arbiter</h1>
+            <p>
+                Joining Watonomous, i get to deepdive into the world of autonomy controls and embedded systems. I get to learn
+                about technologies that faciliate embedded communications such as Linux, Docker, and ROS. And also learn about and implement
+                the logic devices such as muxes. I learned so much being around these incredible people. This is where I learned "Ït's not about what you know,
+                it about who you know". This is simply because the people you know that are better than you will teach you invaluable things
+                which you can not learn yourself. 
+
+                <br><br>
+                Well enough of that, I am building a multiplexer that would control who has control over the vehicle.
+                Either the manual joystick or AUTONOMY. The manufal joystick would have priority. These messages are sent in as 
+                CAN messages and the way the MUX works is that it is a YAML file describing a ROS node that subscribes to both the 
+                the joystick and autonomy publishers, and parses which one has control over the car. Learning ROS will be very helpful!
+
+                <br> HAL arbiter is a ticket yet to come.
+            </p>
+            <h1>Printed Flexible Circuits  (OSI Systems) Interview Challenge</h1>
+            <p>
+                Pretty cool that a company has this set up. I was selected for an interview for this company and I got to tour 
+                the manufacturing facility. I saw their micro soldering stations, their test fixtures, and their fabrication machines.
+                Then the challenge came, the goal of the job would be to automate test fixture results. A little backstory on the problem is that
+                the vendor-bought test fixture only transiently displays test results, requiring an employee to stand there and watch when a test failed
+                and record it, either by taking a photo or using a notebook. This is highly inefficient, since these test fixtures are used
+                extensively and each test requires upwwards of ten minutes. Another requirement was the fact that we can't get invasive with
+                the test fixture, it being vendor sold. So, if any problem arises, it would be our blame and warrantly doesn't apply. Looking
+                at the results, I noticed that the vendor-sold fixture gives a RED FAIL when the test fails and a green PASS if the test
+                passes. Based on the differences, the only non-invasive solution I could come up with that would suit the situation
+                 was the idea to simply detect when the display displayed a red and green result, and somehow record it. To record it,
+                 we would need cameras, but now the problem arises such that how do we know when to take a photo when the results are displayed
+                 in lines. Would we use some sort of vision software that would move up and down at the same rate the test results were displayed.
+                 But this wouldn't be feasible, if the result was a fail, displaying the failed result would take longer. And again, it had to be
+                 uninvasive. Simplifying things, I just decided to take a photo each time a red was displayed, so even if 1 red was displayed
+                 but there are 6 results on the screen, it would take a photo 6 times, but since human supervision is still required at the end the 
+                 human can parse through. If n/n results are failed, it would still take n photos. Everything works and the technology is simplified
+                 significantly.
+            </p>
+            <h1>Elevator Model (postponed)</h1>
+            <p class="expl">
+                I'm WAS currently working on an elevator model. I'm using the STM32l746 microcontroller
                 to model an elevator system. The elevator would take an input an elevator floor
                 and move a peripheral motor a desired amount based on the modelled floor plan measurements.
                 Then I will send the data remotely to my phone to tell me the number of people per floor
                 on an elevator. The elevator will also track the people calling the elevator at a specific
                 floor and the floor they subsequently go to, keeping track of real-time people at each floor.
-                
+                <br><br>
+                I had to call this project off due to its ambitions being too high. But it is what it is. Maybe I can
+                try again later!
 
+            </p>
+            <h1>Temperature, humidity, and UV sensors</h1>
+            <p>
+                At the U of T Science Unlimited Challenge 2022, I got exposed to the World of Arduinos and modelling. I built
+                an Arduino that would detect the temp, humidity, and UV levels as a simulation to a survival kit to the planet
+                Trappist-1c. So this was cool, seeing for the first time sensors and how they act as an interface for the real world
+                to the digital world. These transducers I saw for the first time inspired me to go into the field of embedded hardware!
+
+                <br><br>
+                I also modelled a carbon scrubber from scratch using popsticle sticks. A good design challenge. And met some amazing people.
             </p>
         </div>
     </div>
