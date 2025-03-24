@@ -126,7 +126,6 @@ body {
       background-color: rgb(250, 222, 9);
     }
     
-    
     #linkedin {
       background-color: aliceblue;
       object-fit: cover;
@@ -248,6 +247,36 @@ background-size: cover;
 background-image: url('https://img.cdn-pictorem.com/uploads/collection/G/GT7HDK2MOE/900_360-Studios_Spectacular_Skies_over_Koolina_Hawaii_at_Sunset.jpg');
 background-size: cover;
 }
+
+.blog-entry5 {
+  /* One blog */
+  position: relative;
+  /* left:4px; */
+  padding: 35px; 
+  /* length of timeline line */
+  border-left: 5px solid #3b9446; /* Timeline line */
+  border-radius: 20px;
+  margin-bottom: 60px;
+  /* space to next time-line item */
+/* background-color: rgb(168, 180, 92); */
+background-image: url('https://i.insider.com/560b1b5cdd089560138b4760?width=1200&format=jpeg');
+background-size: cover;
+}
+
+.blog-entry6 {
+  /* One blog */
+  position: relative;
+  /* left:4px; */
+  padding: 35px; 
+  /* length of timeline line */
+  border-left: 5px solid #3b9446; /* Timeline line */
+  border-radius: 20px;
+  margin-bottom: 60px;
+  /* space to next time-line item */
+/* background-color: rgb(168, 180, 92); */
+background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Ficus_microcarpa_-_La_Gomera_01.jpg');
+background-size: cover;
+}
   
   .blog-container {
     /* title, date, and text */
@@ -335,6 +364,19 @@ background-size: cover;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
+
+.blog-content4 {
+  background-color: rgba(233, 110, 227, 0.4);
+  color: rgb(0, 0, 0);
+  /*nice fade */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 
 #link {
   color: rgb(84, 5, 174);
