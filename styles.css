@@ -259,7 +259,7 @@ background-size: cover;
   margin-bottom: 60px;
   /* space to next time-line item */
 /* background-color: rgb(168, 180, 92); */
-background-image: url('https://i.insider.com/560b1b5cdd089560138b4760?width=1200&format=jpeg');
+background-image: url('https://media.cntraveler.com/photos/62214d1ec10e4f3e5a187003/16:9/w_2560%2Cc_limit/Yuangyang%2520rice%2520terrace%2C%2520Yunnan%2C%2520China_GettyImages-563857341.jpg');
 background-size: cover;
 }
 
@@ -276,6 +276,51 @@ background-size: cover;
 /* background-color: rgb(168, 180, 92); */
 background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Ficus_microcarpa_-_La_Gomera_01.jpg');
 background-size: cover;
+}
+
+.blog-entry7 {
+  /* One blog */
+  position: relative;
+  /* left:4px; */
+  padding: 35px; 
+  /* length of timeline line */
+  border-left: 5px solid #3b9446; /* Timeline line */
+  border-radius: 20px;
+  margin-bottom: 60px;
+  /* space to next time-line item */
+/* background-color: rgb(168, 180, 92); */
+background-image: url('https://e1.pxfuel.com/desktop-wallpaper/144/339/desktop-wallpaper-super-saiyan-science-how-to-throw-a-kamehameha-wave-kame-hame-ha.jpg');
+background-size: cover;
+}
+
+.blog-entry8 {
+  /* One blog */
+  position: relative;
+  /* left:4px; */
+  padding: 35px; 
+  /* length of timeline line */
+  border-left: 5px solid #3b9446; /* Timeline line */
+  border-radius: 20px;
+  margin-bottom: 60px;
+  /* space to next time-line item */
+/* background-color: rgb(168, 180, 92); */
+background-image: url('https://substackcdn.com/image/fetch/$s_!1Crl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F68de72e5-cb8d-4d08-9294-6bf3ff380134_1478x1080.jpeg');
+background-size: contain;
+}
+
+.blog-entry9 {
+  /* One blog */
+  position: relative;
+  /* left:4px; */
+  padding: 35px; 
+  /* length of timeline line */
+  border-left: 5px solid #3b9446; /* Timeline line */
+  border-radius: 20px;
+  margin-bottom: 60px;
+  /* space to next time-line item */
+/* background-color: rgb(168, 180, 92); */
+background-image: url('https://i0.wp.com/themeatandpotatoesoflife.com/wp-content/uploads/2016/11/Uncle_Sam_pointing_finger.jpg?resize=600%2C806&ssl=1');
+background-size: contain;
 }
   
   .blog-container {
@@ -365,8 +410,22 @@ background-size: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-.blog-content4 {
-  background-color: rgba(233, 110, 227, 0.4);
+  .blog-content5 {
+    background-color: rgba(0, 183, 255, 0.4);
+    color: rgb(0, 0, 0);
+    /*nice fade */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+.blog-content6 {
+  background-color: rgba(243, 241, 140, 0.4);
   color: rgb(0, 0, 0);
   /*nice fade */
   padding-left: 20px;
@@ -377,6 +436,49 @@ background-size: cover;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.blog-content7 {
+  background-color: rgba(243, 241, 140, 0.4);
+  color: rgb(0, 0, 0);
+  /*nice fade */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.blog-content8 {
+  background-color: rgba(243, 241, 140, 0.4);
+  color: rgb(0, 0, 0);
+  /*nice fade */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.blog-content9 {
+  background-color: rgba(243, 241, 140, 0.4);
+  color: rgb(0, 0, 0);
+  /*nice fade */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
 
 #link {
   color: rgb(84, 5, 174);
