@@ -177,6 +177,19 @@ body {
     .blog {
       text-align: center;
     }
+
+    #top1 {
+      background-color: rgb(240, 202, 153);
+      object-fit:cover;
+      position:relative;
+      width: 500px;
+      height: auto;
+      border-style:ridge;
+      border-color:black;
+      border-radius: 5px;
+      border-width: 3px;
+      transition: opacity 0.15s, background-color 0.3s, box-shadow 0.15s;
+    }
   
   .blogs-container {
     /* blog section */

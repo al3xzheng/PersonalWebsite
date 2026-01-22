@@ -130,3 +130,83 @@ body {
 }
 
   
+.centered-container {
+    text-align: center;
+}
+
+.mellow-box {
+    /* Font Styling */
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #444; /* Soft dark grey, less harsh than black */
+    line-height: 1.6;
+
+    /* Box Styling */
+    max-width: 450px; /* Limits the width for better readability */
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; /* Rounded corners for a mellow feel */
+    
+    /* Subtle Shadow for Depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+#research-viewer-root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    width: 100%;
+    background-color: #f7f7f9;
+    font-family: Georgia, serif;
+    overflow: hidden; /* Prevents the outer page from scrolling */
+}
+
+/* Mellow Header Section */
+#research-viewer-root .viewer-header {
+    flex-shrink: 0;
+    padding: 15px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+}
+
+#research-viewer-root .viewer-header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: normal;
+}
+
+#research-viewer-root .viewer-header p {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+}
+
+/* Main Flex Area for Side-by-Side */
+#research-viewer-root .main-content {
+    display: flex;
+    flex-grow: 1;
+    padding: 12px;
+    gap: 12px;
+    min-height: 0; /* Critical for Firefox/Chrome to allow inner scrolling */
+}
+
+/* Individual PDF Panes */
+#research-viewer-root .pdf-pane {
+    flex: 1;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    overflow: hidden; /* Encapsulates the PDF scrollbar */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Ensure the Object fills the pane exactly */
+#research-viewer-root object {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
