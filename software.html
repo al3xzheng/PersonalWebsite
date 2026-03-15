@@ -18,8 +18,8 @@
             <ul class="breadcrumb">
                 <li><a href="timeline.html">My Timeline</a></li>
                 <li ><a href="hardware.html">Hardware</a></li>
-                <li id="current"><a>Software</a></li>
-                <li><a href="firmware.html">Firmware</a></li>
+                <li id="current"><a>Controls</a></li>
+                <!-- <li><a href="firmware.html">Firmware</a></li> -->
                 <li><a href="mechanical.html">Mechanical</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="pastwebsite.html">Past Personal Website</a></li>
@@ -27,13 +27,51 @@
         </div>
         <div class="text">
             <h1>
-                Integrating Sensor Fusion to Generate a 3D World View (Aircraft simulation)
-                <a href="https://github.com/Glen-Zheng/robotics-sensor-fusion" class="custom-action-link" target="_blank">
-                    Github link WIP
+                Automatic Kempe-Based 5 Colour Theorem Graph Colorer on Simple Graphs
+                <a href="https://github.com/al3xzheng/FiveColourTheorem" class="custom-action-link" target="_blank">
                 </a>
             </h1>
             <p id="expl">
-                In the works. See github for status, this will be updated when the time is right.
+                I:
+                <br>
+                - Applied Kempe's Inductoin method on simple, finite, planar graphs to 5 colour any map                <br>
+
+                - Deployed an animation that models Kempe's method to visualize the deletion, restoration, and colouring of nodes                <br>
+
+                - Programmed algorithm in C++, with python flsak api to link to front end                <br>
+
+                - Proved the Five Colour Theorem proof and gave a summary of findings to research team.                <br>
+
+
+                <video controls style="max-width:100%; height:auto;">
+                    <source src="resources/5CT.mp4" type="video/mp4">
+                </video>
+            </p>
+            <h1>
+                Integrating Sensor Fusion to Generate a 3D World View (Aircraft simulation)
+                <a href="https://github.com/Glen-Zheng/robotics-sensor-fusion" class="custom-action-link" target="_blank">
+                </a>
+            </h1>
+            <p id="expl">
+                A kalman filter is simply a state estimator(filter) modelling unconstrained systems as linear systems with ideally gaussian state and measurement noise.
+                A kalman filter is a two step recursive estimator with a simple prediction step initially that PREDICTS what the 
+                next state would be based on a linear equation (state transition matrix) e.g. next state is current state + velocities*T, as well as, predicting
+                the relationship- correlation- between the states using a covariance matrix. The covariance also acts a confidence level
+                of how well you think your initial state is to the ground truth.
+
+                Then the next step CORRECTS this initial prediction by incorporating noise and the offset between the measurement data And
+                the prediction. The correction produces a Gain term (Kalman gain) from the covariance matrix and scales this measurment vs prediction
+                offset. Then this scaled offset is added to the prediction as a correction. Again, the covariance is also corrected.
+
+                I:                <br>
+
+                - Learned about kalman filters and the modelling of non linear states to linear systems via Kalman filter                <br>
+
+                - Introduced noise to my sensors and Applied the sensor measurements to a figure 8 patterns                <br>
+
+                - Saw Kalman filter error and state estimation error.                <br>
+
+                <img src="resources/kalman.png" alt="My Image" style="max-width:100%; height:auto;">
             </p>
             <h1>
                 Low-resolution reflectometry for inline thin-film inspection (coauthored research paper)
@@ -66,6 +104,10 @@
                 • 100% manual execution of motion patterns in Pronterface<br>
                 Time synchronization of data acquisition to the piecewise kinematics of the motion, is developed
                 and to be implemented.
+                <img src="resources/portoflio image.jpg" alt="My Image" style="max-width:100%; height:auto;">
+                <img src="resources/talk.JPG" alt="My Image" style="max-width:100%; height:auto;">
+                <img src="resources/Rig.jpg" alt="My Image" style="max-width:100%; height:auto;">
+
             </p>
             <h1>
                 Top 1% of all solvers on project Euler. 
@@ -78,7 +120,7 @@
                     <p id="link">https://projecteuler.net/progress=alexzheng</p>
                 </a>
             </p>
-            <h1>
+            <!-- <h1>
                 Ontario Ministry of Transportation Dev Co-op
             </h1>
             <p id="expl">
@@ -111,7 +153,7 @@
                 most importantly, the SolidWorks Api. So far i Have created this add-in. See my github. Something that is a big problem is the monster that is the SolidWorks API,
                 the documentation is extremely hard to understand and seems unnnavigatable. So we use the help of the SolidDNA library which can call the SolidWorks API for us. The only
                 problem, being that the creator has disabled it... Ideas generation.
-            </p>
+            </p> -->
 
             <a id="link" href="https://github.com/al3xzheng/Game">
                 View On GitHub
