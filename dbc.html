@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dbcstyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Alex Zheng Dragonboat</title>
+</head>
+
+<body>
+    <div class="page">
+        <div>
+            <a href="index.html"><img src="resources/beaver.jpg" id="beaver"></a>
+        </div>
+        <div>
+            <img id="banner" src="resources/roadview.jpg">
+        </div>
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="timeline.html">My Timeline</a></li>
+                <li id="current"><a>Dragonboat</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="software.html">Controls</a></li>
+                <!-- <li><a href="firmware.html">Firmware</a></li> -->
+                <li><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="pastwebsite.html">Past Personal Website</a></li>
+            </ul> 
+        </div>
+
+        <div class="carousel-container">
+
+
+
+        <div class="carousel">
+
+        <div class="carousel-track">
+
+            <div class="slide">
+            <img src="resources/idbf flags.jpg  " alt="Description of image one">
+            <div class="caption">
+                <h3>Image One</h3>
+                <p>Worlds 2023 IDBF flags in Thailand</p>
+            </div>
+            </div>
+
+            <div class="slide">
+            <img src="resources/Screenshot 2026-02-13 at 19-28-10 Instagram.png" alt="Description of image two">
+            <div class="caption">
+                <h3>Image Two</h3>
+                <p>2023 nationals Junior (could be 2024 though. I'm not sure 50/50). I'm drumming</p>
+            </div>
+            </div>
+
+            <div class="slide">
+            <img src="resources/Screenshot 2026-03-21 at 22-52-56 Instagram.png" alt="Description of image three">
+            <div class="caption">
+                <h3>Image Three</h3>
+                <p>2024 with PDBC 24U team</p>
+            </div>
+            </div>
+
+            <div class="slide">
+            <img src="resources/Best picture of Worlds 2023.png" alt="Description of image three">
+            <div class="caption">
+                <h3>Image Three</h3>
+                <p>Worlds 2023 (seat 2 left).</p>
+            </div>
+            </div>
+
+            <div class="slide">
+            <img src="resources/dragonboat.jpeg" alt="Description of image three">
+            <div class="caption">
+                <h3>Image Three</h3>
+                <p> I think this is 2023 Hamilton, not sure at all.</p>
+            </div>
+            </div>
+
+            <div class="slide">
+            <img src="resources/Good catch.png" alt="Description of image three">
+            <div class="caption">
+                <h3>Image Three</h3>
+                <p> Worlds 2023 (seat 2 left)</p>
+            </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-button prev" aria-label="Previous image">
+            &#10094;
+        </button>
+
+        <button class="carousel-button next" aria-label="Next image">
+            &#10095;
+        </button>
+
+        <div class="dots">
+            <button class="dot active" aria-label="Go to image 1"></button>
+            <button class="dot" aria-label="Go to image 2"></button>
+            <button class="dot" aria-label="Go to image 3"></button>
+        </div>
+
+        </div>
+
+        <div class="carousel-description">
+        <h1>Dragonboat</h1>
+        <p>
+            This shows as proof of my experiences in dragonboat racing.
+        </p>
+        </div>
+
+    </div>
+
+
+    <script>
+        const track = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
+
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === currentSlide);
+        });
+        }
+
+        document.querySelector(".next").addEventListener("click", () => {
+        showSlide(currentSlide + 1);
+        });
+
+        document.querySelector(".prev").addEventListener("click", () => {
+        showSlide(currentSlide - 1);
+        });
+
+        dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            showSlide(index);
+        });
+        });
+  </script>
+
+
+    </div>
+</body>
+</html>
